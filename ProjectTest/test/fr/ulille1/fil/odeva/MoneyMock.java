@@ -33,7 +33,7 @@ public class MoneyMock {
         Money m12EURm = mock(Money.class);
         doReturn(12).when(m12EURm).getValue();
         doReturn("EUR").when(m12EURm).getCurrency();
-
+        
         Money result = MoneyOps.simpleAdd(m12EURm, m12EURm);
         assertEquals(expected, result);
     }
